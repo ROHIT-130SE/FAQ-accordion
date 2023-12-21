@@ -33,7 +33,7 @@ To view the FAQ accordion component, open the `index.html` file in a web browser
 
 ## Live Site
 
-Visit the live site [here]().
+Visit the live site [here](https://watery-talk.surge.sh/).
 
 ### For Developers
 
