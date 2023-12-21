@@ -31,11 +31,14 @@ h1 {
   color: hsl(292, 42%, 14%);
 }
 
-h4 {
+.ques {
   color: hsl(292, 42%, 14%);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
-h4:hover {
+.ques:hover {
   color: hsl(292, 16%, 49%);
 }
 
@@ -45,7 +48,11 @@ p {
   color: hsl(285, 2%, 64%);
 }
 
-p.visible {
+.ans {
+  display: none;
+}
+
+.showAns {
   display: block;
 }
 
@@ -71,4 +78,36 @@ h4.active:hover {
 .attribution a {
   text-decoration: none;
   color: rgb(134, 106, 186);
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    background: url("/assets/images/background-pattern-mobile.svg") center/cover;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  main {
+    width: 300px;
+    height: 70%;
+    padding: 20px;
+  }
+
+  .ques {
+    align-items: center;
+  }
+
+  .imagePlus {
+    height: 30px;
+    width: 30px;
+  }
+
+  .ans.showAns {
+    display: block;
+  }
+
+  .attribution {
+    font-size: 10px;
+  }
 }
